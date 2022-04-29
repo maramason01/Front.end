@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset ="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Formulario</title>
+    </head>
+
+    <body>
+        <h1 style="text-align: center;">
+            HOJA DE INSCRIPCION
+        </h1>
+        <h1 style="text-align: center;">
+            EN LOS TALLERES
+        </h1>
+        <fieldset style="background-color: grey;">
+            <legend style="border: 1px solid black; background-color:white;">Datos Personales</legend>
+            <table>
+                    <tr>
+                        <td><label for="nombre">Nombre:</label></td>
+                        <td><label for="apellido">Apellido:</label></td>
+                        <td><label for="rut">Rut:</label></td>      
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="nombre"></td>
+                        <td><input type="text" name="apellido"></td>
+                        <td><input type="text" name="rut"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Lugar de Nacimiento">Lugar de Nacimiento</label></td>
+                        <td><label for="Provincia">Provincia</label></td>
+                        <td><label for="Fecha de Nacimiento">Fecha de Nacimiento</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="Lugar de Nacimiento"></td>
+                        <td><input list="titulo" name="Provincia">
+                            <datalist id="titulo">
+                                <option value="Bio Bio"></option>
+                                <option value="Concepcion"></option>
+                                <option value="Arauco"></option>
+                            </datalist></td>
+                        <td><input type="date" name="Fecha de Nacimiento"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="direccion">Direccion:</label></td>
+                        <td><label for="codigo postal">Codigo Postal:</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" size="46" name="direccion"></td>
+                        <td><input type="number" name="Codigo Postal"></td>
+                    </tr>
+            </table>
+        </fieldset>
+
+        <fieldset style="background-color: rgb(156, 104, 53);">
+            <legend style="border: 1px solid black; background-color:white;">Forma de Acceso</legend>
+            <dl>
+                <dt><input type="radio" name="Forma de Acceso">Directo</dt>
+                <dd><input type="radio" name="Directo">Bachillerato <input type="text"></dd>
+                <dd><input type="radio" name="Directo">Experimental</dd>
+                <dd><input type="radio" name="Directo">Otros(Especifique) <input type="text"></dd>
+                <dt><input type="radio" name="Forma de Acceso">Prueba Libre</dt>
+            </dl>
+        </fieldset>   
+        <fieldset style="background-color: rgb(151, 11, 53);">
+            <legend style="border: 1px solid black; background-color:white;">Documento Adjuntado</legend>
+            <input type="checkbox" name="Documento">Fotocopia Carnet
+            <input type="checkbox" name="Documento">Certificado Academico <br/>
+            <input type="checkbox" name="Documento">Otros Documentos (Especifique)
+            <input type="text" name="Documento">
+        </fieldset>
+    <p>
+        <input type="submit" value="Enviar Solicitud">
+    </p>
+    </body>
+</html>
